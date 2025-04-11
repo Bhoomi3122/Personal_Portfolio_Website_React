@@ -10,7 +10,7 @@ function Navbar() {
     { name: 'Projects', link: 'projects' },
     { name: 'Accomplishments', link: 'accomplishments' },
     { name: 'Resume', link: 'resume' },
-    { name: 'Contact Me', link: '#contact' },
+    { name: 'Contact Me', link: 'contact' },
   ];
 
   const navVariants = {

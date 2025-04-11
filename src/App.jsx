@@ -14,6 +14,9 @@ import ProjectDetails from "./components/ProjectDetails";
 import Accomplishments from "./components/Accomplishments";
 import Resume from './components/Resume';
 import About from './components/About';
+import Contact from './components/Contact';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,10 +36,12 @@ function App() {
                 <Route path='/accomplishments' element={<Accomplishments/>}/>
                 <Route path='/resume' element={<Resume/>}/>
                 <Route path='/about' element={<About/>}/>
+                <Route path='/contact' element={<Contact/>}/>
               </Routes>
             </AnimatePresence>
           </main>
           <Footer />
+          <ToastContainer />
         </div>
       </div>
     </Router>
