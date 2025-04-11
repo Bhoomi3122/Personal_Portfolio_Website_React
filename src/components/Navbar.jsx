@@ -6,11 +6,11 @@ function Navbar() {
   
   const navItems = [
     { name: 'Home', link: '/' },
+    { name: 'About Me', link: 'about' },
     { name: 'Projects', link: 'projects' },
     { name: 'Accomplishments', link: 'accomplishments' },
-    { name: 'Resume', link: '#resume' },
+    { name: 'Resume', link: 'resume' },
     { name: 'Contact Me', link: '#contact' },
-    { name: 'About Me', link: '#about' },
   ];
 
   const navVariants = {

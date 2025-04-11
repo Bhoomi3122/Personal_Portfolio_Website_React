@@ -12,6 +12,8 @@ import { AnimatePresence } from "framer-motion";
 import Projects from "./components/Projects";
 import ProjectDetails from "./components/ProjectDetails";
 import Accomplishments from "./components/Accomplishments";
+import Resume from './components/Resume';
+import About from './components/About';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +31,8 @@ function App() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/projects/:id" element={<ProjectDetails />} />
                 <Route path='/accomplishments' element={<Accomplishments/>}/>
+                <Route path='/resume' element={<Resume/>}/>
+                <Route path='/about' element={<About/>}/>
               </Routes>
             </AnimatePresence>
           </main>
