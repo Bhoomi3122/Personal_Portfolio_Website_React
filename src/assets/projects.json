@@ -1,0 +1,149 @@
+{
+  "projects":[{
+    "id": 1,
+    "title": "Sahayak - Community Support Platform",
+    "shortDescription": "A platform for women to voice security concerns and access community support.",
+    "longDescription": "Sahayak is a full-stack application that empowers women by giving them a safe space to raise security issues, share concerns, read others’ experiences, access informative blogs, and find helpline numbers. It addresses the lack of centralized platforms for women to discuss personal safety issues. Built using React, Node.js, Express.js, and MongoDB, it aims to foster awareness and community-driven safety improvements.",
+    "image": "https://img.freepik.com/premium-vector/diverse-group-womens-hands-putting-together-teamwork-unity-concept_1323048-61227.jpg?semt=ais_hybrid",
+    "techStack": ["React", "Node.js", "MongoDB", "Express.js"],
+    "status": "Pending",
+    "keyFeatures": [
+      "Users can create posts about security concerns and read others' experiences.",
+      "Explore blogs to stay informed on women's safety and preventive measures.",
+      "Find emergency helpline numbers and websites for immediate help.",
+      "Posts can be filtered by categories like location and type of issue.",
+      "Comment on posts to express opinions, suggest solutions, and offer support.",
+      "Planned feature: Secure authentication to verify users before posting."
+    ],
+    "skillsUsed": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "Frontend & Backend Development"
+    ]
+  }
+,  
+{
+  "id": 2,
+  "title": "University Management System (Web)",
+  "shortDescription": "A system for managing university student records efficiently using React.",
+  "longDescription": "University Management System is a web-based application built with React to manage student records efficiently. It allows users to add, update, delete, and search for student records. The system uses LocalStorage for data persistence, ensuring that data remains intact even after reloading the page. It includes error handling, unique ID assignment, and optimized data retrieval, making record-keeping accurate, fast, and hassle-free.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXnoeUsi_VkeHREJrUmL6bmzMJxRwYdWED_tQbXy2aKLka_6kYPr9_5vaSYYCzv_WE1Lg&usqp=CAU",
+  "techStack": ["React", "JavaScript", "LocalStorage"],
+  "status": "Completed",
+  "keyFeatures": [
+    "Add, update, search, and delete student records with a clean interface.",
+    "Validation for phone numbers and duplicate entries to ensure clean data.",
+    "Each student is assigned a unique roll number for identification.",
+    "Uses LocalStorage for persistence and optimized data retrieval.",
+    "Handles invalid inputs and error conditions to enhance reliability."
+  ],
+  "skillsUsed": [
+    "React",
+    "JavaScript",
+    "LocalStorage",
+    "State Management"
+  ]
+}
+,
+{
+  "id": 3,
+  "title": "Smart Home Automation",
+  "shortDescription": "An IoT-based home automation system for smart device control and monitoring.",
+  "longDescription": "Smart Home Automation is an IoT-based project that uses Arduino and IoT sensors to automate home appliances like lights, fans, and other electrical devices. The system allows users to control and monitor appliances remotely via a mobile app or voice commands. It aims to enhance convenience, security, and energy efficiency through automation, real-time monitoring, and optimized power usage, contributing to a smart and sustainable home environment.",
+  "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/08/automate-home-budget.jpg",
+  "techStack": ["Arduino", "IoT Sensors", "Embedded Systems", "C++"],
+  "status": "Completed",
+  "keyFeatures": [
+    "Built with Arduino and IoT sensors for seamless device control and automation.",
+    "Features a motion-detecting human sensor door that opens automatically.",
+    "Supports voice and app-controlled lights and fans for enhanced comfort.",
+    "Includes a gas leakage sensor that alerts users to prevent hazardous situations."
+  ],
+  "skillsUsed": [
+    "Arduino Programming",
+    "IoT Sensors",
+    "Embedded Systems",
+    "C++"
+  ]
+}
+,
+{
+  "id": 4,
+  "title": "TextUtils",
+  "shortDescription": "A text utility app for performing various text modifications quickly and efficiently.",
+  "longDescription": "TextUtils is a simple web-based application designed to perform basic text operations efficiently. It enables users to capitalize the first letter of each word, reverse text, and count words and characters. This tool aims to improve productivity by automating repetitive text modifications, making text processing faster and more convenient for users such as students, writers, and professionals.",
+  "image": "https://static.vecteezy.com/system/resources/previews/021/143/257/non_2x/text-document-file-line-icon-illustration-vector.jpg",
+  "techStack": ["React", "JavaScript", "CSS"],
+  "status": "Completed",
+  "keyFeatures": [
+    "Perform word count, character count, sentence reversal, and capitalization easily.",
+    "Automatically convert text to uppercase, lowercase, or capitalize words, saving time on text-editing tasks.",
+    "User-friendly interface for smooth navigation and efficient text operations.",
+    "Dark mode toggle for enhanced readability and comfort, reducing eye strain in different lighting conditions."
+  ],
+  "skillsUsed": [
+    "React",
+    "JavaScript",
+    "CSS",
+    "State Management"
+  ],
+  "projectUrl": "https://github.com/Bhoomi3122/Simple-Text-Tool-React-App-2.0"
+}
+,
+{
+  "id": 5,
+  "title": "Daily Goals Tracker",
+  "shortDescription": "A simple task-tracking app for managing and completing daily goals.",
+  "longDescription": "A web-based application built to help users create, track, and manage their daily goals efficiently. It provides a simple yet effective way to stay organized by allowing users to set tasks, mark them as completed, and delete them when necessary. The platform is designed to improve personal productivity by offering a structured approach to goal management.",
+  "image": "https://m.media-amazon.com/images/I/61BwqkdPshL.jpg",
+  "techStack": [
+    "React",
+    "LocalStorage"
+  ],
+  "status": "Completed",
+  "keyFeatures": [
+    "Users can efficiently track their daily goals by adding new tasks, updating existing ones, and deleting completed tasks to maintain a well-organized and structured task list effortlessly.",
+    "The application provides a user-friendly interface, ensuring seamless task management by allowing users to create, edit, and remove tasks with minimal effort and enhanced accessibility for convenience.",
+    "Utilizes Local Storage to retain task data across sessions, ensuring persistence and allowing users to resume their progress without losing important task details or requiring manual re-entry.",
+    "Designed for simplicity and efficiency, the application helps users stay productive by organizing tasks effectively, setting priorities, and achieving daily objectives in a structured and manageable manner."
+  ],
+  "skillsUsed": [
+    "React",
+    "JavaScript",
+    "LocalStorage",
+    "State Management"
+  ],
+  "projectUrl": "https://github.com/Bhoomi3122/Daily-goals-tracker---React-App"
+}
+,
+{
+  "id": 6,
+  "title": "University Management System (Console)",
+  "shortDescription": "A C++ console application for managing university student records efficiently.",
+  "longDescription": [
+    "This is a console-based application built using C++ for efficiently managing university student records. It provides a structured way to store, retrieve, and update student details, ensuring a seamless record-keeping process. The system is designed to be lightweight and easy to use, making it an ideal solution for academic institutions.",
+    "The application allows users to add new student records, search for existing ones, and update details as needed. It ensures data integrity by assigning unique roll numbers to each student and implements validation checks to prevent incorrect data entry. The need for such a system arises from the challenges universities face in handling student information manually, which can lead to errors and inefficiencies.",
+    "By automating student record management, this application enhances accuracy and reduces the chances of data inconsistencies. It also improves efficiency by minimizing human errors and ensuring that all student data is stored and accessed in an organized manner. With its robust error-handling mechanisms, the system provides a reliable and efficient way to manage university records."
+  ],
+  "image": "https://www.rexocampus.com/images/university-icon/Educational-ecosystem.png",
+  "techStack": [
+    "C++"
+  ],
+  "status": "Completed",
+  "keyFeatures": [
+    "Allows adding new students with unique roll numbers, ensuring proper data integrity and preventing duplication for maintaining an accurate and reliable student database system efficiently.",
+    "Provides an efficient search functionality that enables users to quickly find student records while offering appropriate feedback when no matching records are found in the system.",
+    "Supports updating student details, ensuring accurate modifications with validation checks for critical information such as phone numbers, preventing incorrect or invalid data entries effectively.",
+    "Designed to enhance user experience by streamlining student record management, making it easier to organize, retrieve, and maintain essential academic information with minimal effort and time consumption."
+  ],
+  "skillsUsed": [
+    "C++",
+    "Data Structures",
+    "File Handling"
+  ],
+  "projectUrl": "https://github.com/Bhoomi3122/University-Management-System---unique-project"
+}
+  ]
+}

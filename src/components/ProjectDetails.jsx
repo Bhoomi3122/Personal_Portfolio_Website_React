@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import projectsData from "./projects.json";
+import projectsData from "../assets/projects.json";
 import { FaArrowLeft } from "react-icons/fa";
 import TechIcon from "../components/TechIcon";
 

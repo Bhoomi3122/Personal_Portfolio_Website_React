@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
-import projectsData from "./projects.json";
+import projectsData from "../assets/projects.json";
 
 const container = {
   hidden: { opacity: 0 },

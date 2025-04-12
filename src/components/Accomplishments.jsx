@@ -1,79 +1,19 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import accomplishmentsData from "../assets/Accomplishments.json"; // Import the JSON data
 
 export default function AccomplishmentsSection() {
   const [activeTab, setActiveTab] = useState("leadership");
   const [accomplishments, setAccomplishments] = useState({
     leadershipActivities: [],
-    achievements: []
+    achievements_certifications: []
   });
 
   useEffect(() => {
+    // Set the state with the imported data from the JSON file
     setAccomplishments({
-      leadershipActivities: [
-        {
-          title: "Project Lead - Web Redesign",
-          shortDescription:
-            "Led a team of 5 developers to completely redesign our company website, resulting in a 45% increase in conversions.",
-          skillsUsed: ["Leadership", "Project Management", "UI/UX", "React"]
-        },
-        {
-          title: "Conference Speaker",
-          shortDescription:
-            "Delivered keynote presentations at 3 industry conferences, sharing insights on modern web development practices.",
-          skillsUsed: ["Public Speaking", "Industry Knowledge", "Presentation Skills"]
-        },
-        {
-          title: "Hackathon Organizer",
-          shortDescription:
-            "Organized and facilitated a company-wide hackathon with 50+ participants, resulting in 3 new product features.",
-          skillsUsed: ["Event Planning", "Team Building", "Problem Solving"]
-        },
-        {
-          title: "Mentorship Program Coordinator",
-          shortDescription:
-            "Founded and coordinated a mentorship program pairing junior developers with seniors, improving retention by 30%.",
-          skillsUsed: ["Mentoring", "Program Development", "Relationship Building"]
-        }
-      ],
-      achievements: [
-        {
-          title: "Employee of the Year",
-          shortDescription:
-            "Recognized for outstanding contributions to team productivity and innovative solutions.",
-          skillsUsed: ["Innovation", "Productivity", "Technical Excellence"]
-        },
-        {
-          title: "Patent Application",
-          shortDescription:
-            "Co-authored patent for new algorithm improving system efficiency by 60%.",
-          skillsUsed: ["Research", "Innovation", "Technical Writing"]
-        },
-        {
-          title: "Open Source Contributor",
-          shortDescription:
-            "Major contributor to popular framework with over 10,000 stars on GitHub.",
-          skillsUsed: ["Collaboration", "Code Quality", "Documentation"]
-        },
-        {
-          title: "Award-Winning Project",
-          shortDescription:
-            "Led development of application that won industry recognition for innovative user experience.",
-          skillsUsed: ["Leadership", "Innovation", "UX Design"]
-        },
-        {
-          title: "Certification Excellence",
-          shortDescription:
-            "Achieved highest score in organization on advanced technical certification.",
-          skillsUsed: ["Technical Knowledge", "Study Skills", "Dedication"]
-        },
-        {
-          title: "Cost Reduction Initiative",
-          shortDescription:
-            "Implemented system optimizations that reduced operational costs by 25%.",
-          skillsUsed: ["Problem Solving", "System Architecture", "Optimization"]
-        }
-      ]
+      leadershipActivities: accomplishmentsData.leadershipActivities,
+      achievements_certifications: accomplishmentsData.achievements_certifications
     });
   }, []);
 
@@ -107,7 +47,7 @@ export default function AccomplishmentsSection() {
     {activeTab === "leadership" ? (
       <LeadershipGrid items={accomplishments.leadershipActivities} />
     ) : (
-      <AchievementsGrid items={accomplishments.achievements} />
+      <AchievementsGrid items={accomplishments.achievements_certifications} />
     )}
   </motion.div>
 </AnimatePresence>
