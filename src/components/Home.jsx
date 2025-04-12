@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import profile from '../assets/profile.jpg';
+import { useNavigate } from "react-router-dom";
 
 // TypeWriter component
 const TypeWriter = ({ texts, typingSpeed = 150, deletingSpeed = 50, delayBetweenTexts = 2000 }) => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
-
+  
   useEffect(() => {
     const timeout = setTimeout(() => {
       // Current text to display
@@ -60,7 +61,7 @@ const Counter = ({ targetNumber, duration = 2 }) => {
     
     const updateCount = (timestamp) => {
       if (!startTime) startTime = timestamp;
-      const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
+      const progress = Math.min((timestamp - startTime) / (duration * 700), 1);
       
       setCount(Math.floor(progress * targetNumber));
       
@@ -80,11 +81,11 @@ const Counter = ({ targetNumber, duration = 2 }) => {
 // Main Home Component
 function Home() {
   const controls = useAnimation();
+  const navigate = useNavigate();
   const typingTexts = [
-    "I am a Web Developer.",
-    "I am a Computer Science Student.",
+    "I am a Computer Science & Design Student.",
+    "I am a web developer",
     "I am a Problem Solver.",
-    "I am passionate about AI.",
     "I am a DSA Enthusiast."
   ];
   
@@ -130,14 +131,14 @@ function Home() {
         {/* Left column with text */}
         <motion.div className="flex-1" variants={itemVariants}>
           <motion.h2 
-            className="text-xl md:text-2xl font-light text-blue-200 mb-3"
+            className="text-xl md:text-2xl font-light text-blue-200 mb-3 -my-7"
             variants={itemVariants}
           >
             Hello, I'm
           </motion.h2>
           
           <motion.h1 
-            className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-400 mb-4"
+            className="text-4xl my-4 md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-400 mb-4"
             variants={itemVariants}
           >
             Bhoomi
@@ -151,31 +152,34 @@ function Home() {
           </motion.div>
           
           <motion.p 
-            className="text-gray-300 mb-8 max-w-lg"
+            className="text-gray-300 mb-8 max-w-lg my-6"
             variants={itemVariants}
           >
-            Computer Science student passionate about web development, algorithms, and creating intuitive user experiences.
+            Computer Science and Design student passionate about Data Structures, Web Development, and continuously learning and contributing in the tech world.
           </motion.p>
           
           <motion.div 
             className="flex space-x-4 mb-8"
             variants={itemVariants}
           >
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              View My Work
-            </motion.button>
-            
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-transparent border-2 border-blue-400 text-blue-200 font-medium py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Contact Me
-            </motion.button>
+            <motion.a 
+  href="/projects" 
+  className="cursor-pointer bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-medium py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  View My Work
+</motion.a>
+
+<motion.a 
+  href="/contact" 
+  className="cursor-pointer bg-transparent border-2 border-blue-400 text-blue-200 font-medium py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  Contact Me
+</motion.a>
+
           </motion.div>
           
           <motion.div 
@@ -184,7 +188,7 @@ function Home() {
             whileHover={{ y: -5 }}
           >
             <div className="mr-4 text-4xl font-bold text-blue-300">
-              <Counter targetNumber={700} />+
+              <Counter targetNumber={800} />+
             </div>
             <div className="text-gray-200">
               <div className="text-sm uppercase tracking-wide">DSA Problems</div>
