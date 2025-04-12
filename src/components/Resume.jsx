@@ -83,8 +83,13 @@ const buttonVariants = {
 export default function ResumeComponent() {
   const [isHovered, setIsHovered] = useState(false);
 
-  const viewResume = () => window.open("#resume-link", "_blank");
-  const downloadResume = () => console.log("Downloading resume PDF...");
+  const viewResume = () => window.open("https://drive.google.com/file/d/1OQt0qM938zfhNhShFrN_pMuB5hu-jUiD/view?usp=sharing", "_blank");
+  
+  const downloadResume = () => {
+    // Creating a direct link to download the file
+    window.open("https://drive.google.com/uc?export=download&id=1OQt0qM938zfhNhShFrN_pMuB5hu-jUiD", "_blank");
+  };
+  
 
   return (
     <motion.div 
@@ -136,7 +141,7 @@ export default function ResumeComponent() {
             </div>
 
             <h2 className="text-2xl font-bold mb-4 text-center text-[#bae6fd]">Bhoomi Garg</h2>
-            <p className="text-lg mb-6 text-center text-[#93c5fd]">Computer Science Student</p>
+            <p className="text-lg mb-6 text-center text-[#93c5fd]">Computer Science and Design Student</p>
 
             <div className="space-y-4 text-sm">
               <div className="flex items-center gap-3 text-[#93c5fd] hover:text-[#7dd3fc] transition-colors">
