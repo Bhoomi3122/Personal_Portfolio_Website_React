@@ -129,7 +129,7 @@ function TabButton({ active, onClick, label }) {
       {active && (
         <motion.div
           layoutId="activeTabBackground"
-          className="absolute inset-0 rounded-full z-0 bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-purple-600"
+          className="absolute inset-0 rounded-full z-0 bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-purple-600"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

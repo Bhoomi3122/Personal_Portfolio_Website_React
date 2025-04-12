@@ -50,38 +50,32 @@ const Projects = () => {
         Explore my latest work and side projects that showcase my skills and passion for development.
       </motion.p>
       
-  <div className="flex justify-center mb-8" id="projects">
-  <div className="inline-flex rounded-md shadow">
-    <button
-      onClick={() => setFilter("all")}
-      className={`px-6 py-2 text-sm font-medium rounded-l-md transition-all duration-300 ${
-        filter === "all"
-          ? "bg-gradient-to-r from-primary-gradient-1 to-primary-gradient-2 text-primary-dark font-semibold border border-cyan-300 shadow-[0_0_8px_2px_rgba(34,211,238,0.6)]"
-          : "bg-primary-dark text-text-color border border-white border-opacity-30 hover:cursor-pointer"
-      }`}
-    >
-      All
-    </button>
-    <button
-      onClick={() => setFilter("completed")}
-      className={`px-6 py-2 text-sm font-medium transition-all duration-300 ${
-        filter === "completed"
-          ? "bg-gradient-to-r from-primary-gradient-1 to-primary-gradient-2 text-primary-dark font-semibold border border-cyan-300 shadow-[0_0_8px_2px_rgba(34,211,238,0.6)]"
-          : "bg-primary-dark text-text-color border-t border-b border-white border-opacity-30 hover:cursor-pointer"
-      }`}
-    >
-      Completed
-    </button>
-    <button
-      onClick={() => setFilter("pending")}
-      className={`px-6 py-2 text-sm font-medium rounded-r-md transition-all duration-300 ${
-        filter === "pending"
-          ? "bg-gradient-to-r from-primary-gradient-1 to-primary-gradient-2 text-primary-dark font-semibold border border-cyan-300 shadow-[0_0_8px_2px_rgba(34,211,238,0.6)]"
-          : "bg-primary-dark text-text-color border border-white border-opacity-30 hover:cursor-pointer"
-      }`}
-    >
-      Pending
-    </button>
+      <div className="flex justify-center mb-8" id="projects">
+  <div className="inline-flex rounded-full bg-primary-dark p-1 shadow-md">
+    {["all", "completed", "pending"].map((type, index) => (
+      <button
+        key={index}
+        onClick={() => setFilter(type)}
+        className={`relative px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ease-in-out cursor-pointer overflow-hidden
+          ${filter === type
+            ? "text-white z-10"
+            : "text-blue-200 dark:text-blue-300"
+          }`}
+      >
+        {/* Animated Gradient Background */}
+        {filter === type && (
+          <motion.div
+            layoutId="activeProjectTab"
+            className="absolute inset-0 rounded-full z-0 bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-purple-600"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+          />
+        )}
+        <span className="relative z-10 capitalize">{type}</span>
+      </button>
+    ))}
   </div>
 </div>
 

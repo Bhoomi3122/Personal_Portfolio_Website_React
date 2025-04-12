@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FaCode } from 'react-icons/fa'; // Use a coding-related icon for GeeksforGeeks
+import { SiLeetcode } from 'react-icons/si'; // LeetCode icon from React Icons
+import { FaHackerrank } from 'react-icons/fa'; 
 
 // Import icons from lucide-react
 import { 
@@ -16,7 +19,8 @@ import {
   Brain,
   Users,
   FileCode,
-  Sparkles
+  Sparkles,
+  PlayCircle,
 } from "lucide-react";
 
 // Animation variants
@@ -118,42 +122,30 @@ export default function AboutMeSection() {
   const platforms = [
     {
       name: "GeeksforGeeks",
-      icon: (
-        <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-          <path d="M20.99 19.391a1.478 1.478 0 1 1-2.958 0 1.478 1.478 0 0 1 2.958 0zM11.995 0C5.381 0 0 5.382 0 11.996c0 6.614 5.381 11.996 11.995 11.996 6.613 0 11.995-5.382 11.995-11.996C23.99 5.382 18.608 0 11.995 0zm0 4.588c.365 0 .642.278.64.644v6.883c0 .364-.275.644-.64.644a.642.642 0 0 1-.64-.644V5.232c0-.366.275-.644.64-.644zm6.934 15.353H5.072c-.55 0-.737-.111-.737-.703 0-.592.187-.739.737-.739h13.857c.55 0 .737.146.737.739 0 .592-.187.703-.737.703zM5.63 8.269h12.733c.55 0 .742.148.742.74 0 .593-.192.704-.742.704h-5.04v6.209c0 .363-.292.644-.658.644-.365 0-.657-.28-.657-.644V9.713H5.63c-.55 0-.742-.111-.742-.704 0-.592.192-.74.742-.74z" />
-        </svg>
-      ),
+      icon: <FaCode className="w-6 h-6" />,
       color: "text-sky-400",
       bgColor: "bg-slate-800",
       hoverColor: "hover:bg-slate-700",
       borderColor: "border-sky-400/30",
-      link: "#"
+      link: "https://www.geeksforgeeks.org/user/gargbhow8ef/?ref=header_profile"
     },
     {
       name: "LeetCode",
-      icon: (
-        <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-          <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a1.374 1.374 0 0 0 0 1.944l3.854 4.126 5.406 5.788a1.374 1.374 0 0 0 .961.438h9.944a1.374 1.374 0 0 0 1.373-1.375V1.375A1.374 1.374 0 0 0 23.427 0H13.483zm-2.866 12.814a1.02 1.02 0 1 1 0-2.04 1.02 1.02 0 0 1 0 2.04zm6.589 0a1.02 1.02 0 1 1 0-2.04 1.02 1.02 0 0 1 0 2.04zm2.068-4.227a1.02 1.02 0 1 1 0-2.04 1.02 1.02 0 0 1 0 2.04z" />
-        </svg>
-      ),
+      icon: <SiLeetcode className="w-6 h-6" />,
       color: "text-cyan-400",
       bgColor: "bg-slate-800",
       hoverColor: "hover:bg-slate-700",
       borderColor: "border-cyan-400/30",
-      link: "#"
+      link: "https://leetcode.com/u/Bhoomi_3122/"
     },
     {
       name: "HackerRank",
-      icon: (
-        <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-          <path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701c.141 0 .254-.115.254-.258 0-.094-.049-.176-.123-.221L9.223 4.92c-.049-.063-.141-.109-.226-.109-.086 0-.178.045-.226.109L7.076 6.43c-.045.046-.078.107-.078.176 0 .143.113.258.255.258h.704l.008 10.035c0 .145.111.258.254.258h1.492c.142 0 .259-.115.259-.256v-4.004h4.073v4.152h-.699c-.143 0-.256.115-.256.258 0 .092.048.174.119.219l1.579 1.51c.044.061.141.109.225.109.085 0 .176-.045.225-.109l1.593-1.51c.045-.045.08-.104.08-.175 0-.143-.115-.258-.258-.258h-.7v-9.9c0-.143-.115-.26-.257-.26h-1.515z" />
-        </svg>
-      ),
+      icon: <FaHackerrank className="w-6 h-6" />,
       color: "text-sky-300",
       bgColor: "bg-slate-800",
       hoverColor: "hover:bg-slate-700",
       borderColor: "border-sky-300/30",
-      link: "#"
+      link: "https://www.hackerrank.com/profile/gargbhoomi01"
     },
     {
       name: "GitHub",
@@ -162,7 +154,7 @@ export default function AboutMeSection() {
       bgColor: "bg-slate-800",
       hoverColor: "hover:bg-slate-700",
       borderColor: "border-slate-200/30",
-      link: "#"
+      link: "https://github.com/Bhoomi3122"
     },
     {
       name: "LinkedIn",
@@ -171,15 +163,15 @@ export default function AboutMeSection() {
       bgColor: "bg-slate-800",
       hoverColor: "hover:bg-slate-700",
       borderColor: "border-sky-400/30",
-      link: "#"
+      link: "https://www.linkedin.com/in/bhoomi-garg-244b52219/"
     }
   ];
 
   // Fun facts with enhanced styling
   const funFacts = [
     { 
-      icon: <Coffee size={20} />, 
-      text: "Runs on chai",
+      icon: <PlayCircle size={20} />, 
+      text: "Watching a website finally work > Watching movies",
       color: "bg-sky-400",
       bgStart: "from-slate-800",
       bgEnd: "to-slate-900"
@@ -211,17 +203,17 @@ export default function AboutMeSection() {
   const traits = [
     { 
       icon: <Brain size={18} />, 
-      text: "Creative + Analytical mindset",
+      text: "Once I start something, I have to finish it — quitting is not in my vocabulary.",
       color: "text-sky-400" 
     },
     { 
       icon: <FileCode size={18} />, 
-      text: "Curious about both frontend design and backend logic",
+      text: "Hardworking? More like can’t-stop-won’t-stop till it’s perfect.",
       color: "text-cyan-400" 
     },
     { 
       icon: <Users size={18} />, 
-      text: "Enjoys collaborating on projects and writing clean code",
+      text: "Natural leader alert  — I love being the one who gets the team hyped and moving!",
       color: "text-sky-300" 
     }
   ];
@@ -295,7 +287,7 @@ export default function AboutMeSection() {
         variants={itemVariants}
       >
         <p className="text-lg text-slate-300 leading-relaxed">
-          I am a 3rd-year Computer Science and Design student at MITS Gwalior, passionate about full-stack development, solving real-world problems with code, and continuously learning new technologies.
+        I am a 3rd-year Computer Science and Design student at MITS-DU Gwalior, passionate about web development, data structures, and solving real-world problems while continuously growing my skills in the tech world.
         </p>
       </motion.div>
 
@@ -317,7 +309,7 @@ export default function AboutMeSection() {
             <Quote className="text-sky-400 flex-shrink-0 mt-1" />
           </motion.div>
           <p className="text-slate-300 italic font-serif">
-            "Code is not just instructions to a machine, it's a reflection of how we think."
+            "Code is like humor. When you have to explain it, it’s bad."
           </p>
         </div>
         
@@ -533,7 +525,7 @@ export default function AboutMeSection() {
             </div>
             
             <p className="text-slate-300 relative z-10">
-              Currently aiming for a software engineering internship in a top tech company where I can apply my skills, grow as a developer, and contribute to meaningful products.
+            Currently aiming to kickstart my career with a well-established tech company where I can grow every day by learning new skills and applying the ones I’ve already built along the way.
             </p>
             
             {/* Decorative elements for goals section */}
