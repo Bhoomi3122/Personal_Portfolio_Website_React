@@ -249,7 +249,7 @@ const ContactForm = () => {
           transition={{ delay: 0.8, duration: 0.5 }}
         >
           <p className="text-gray-400">
-            You can also reach me directly at <span className="text-sky-300 font-medium">contact@example.com</span>
+            You can also reach me directly at <span className="text-sky-300 font-medium">gargbhoomi01@gmail.com</span>
           </p>
         </motion.div>
       </motion.div>

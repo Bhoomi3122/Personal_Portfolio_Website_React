@@ -182,7 +182,7 @@ export default function ResumeComponent() {
             Professional Resume
           </motion.h1>
           <motion.p className="text-[#93c5fd] mb-8" variants={itemVariants}>
-            Interactive preview of my qualifications and experience
+          A snapshot of my qualifications and competencies.
           </motion.p>
 
           <motion.div className="mb-8" variants={itemVariants}>
