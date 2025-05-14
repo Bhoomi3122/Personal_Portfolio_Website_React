@@ -5,13 +5,16 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   
   const navItems = [
-    { name: 'Home', link: '/' },
-    { name: 'About Me', link: 'about' },
-    { name: 'Projects', link: 'projects' },
-    { name: 'Accomplishments', link: 'accomplishments' },
-    { name: 'Resume', link: 'resume' },
-    { name: 'Contact Me', link: 'contact' },
-  ];
+  { name: 'Home', link: '/' },
+  { name: 'About Me', link: 'about' },
+  { name: 'Resume', link: 'resume' },
+  { name: 'Projects', link: 'projects' },
+  { name: 'Accomplishments', link: 'accomplishments' },
+  { name: 'Certificates', link: 'certificates' },
+  { name: 'Gallery', link: 'gallery' },
+  { name: 'Contact Me', link: 'contact' },
+];
+
 
   const navVariants = {
     hidden: { opacity: 0, y: -20 },
