@@ -12,51 +12,66 @@ const CertificatesSection = () => {
     const mockCertificates = [
       {
         id: 1,
-        name: "Full Stack Development",
-        organization: "Coursera",
-        skills: ["HTML", "CSS", "JavaScript", "React"],
-        description: "Completed a comprehensive full stack web development course covering frontend and backend technologies.",
-        link: "https://example.com/certificate-url"
+        name: "CS50 Web Development using Python and JavaScript",
+        organization: "Harvard University (edX)",
+        skills: ["Python", "JavaScript", "HTML", "CSS", "Git", "CI/CD", "Web Development"],
+        description: "Learnt web development fundamentals, Python, JavaScript, Git, CI/CD principles, and other web fundamentals.",
+        type: "Certification",
+        link: "https://certificates.cs50.io/89b20d9e-a2bf-424c-844a-318c6cfe49ac.pdf?size=letter"
       },
       {
         id: 2,
-        name: "Data Science Specialization",
-        organization: "IBM",
-        skills: ["Python", "Machine Learning", "Data Analysis", "Statistics"],
-        description: "Professional certification in data science fundamentals, machine learning algorithms, and data visualization.",
-        link: "https://example.com/certificate-url"
+        name: "NPTEL IIT BOMBAY'S Demystifying Networks",
+        organization: "IIT Bombay – NPTEL",
+        skills: ["Computer Networks", "TCP/IP", "OSI Model", "Protocols"],
+        description: "NPTEL online certification covering foundational networking concepts and protocols.",
+        type: "Certification",
+        link: "https://drive.google.com/file/d/1F7diJ5C3ZZikHrESOZBnpF85YIpgok9H/view?usp=sharing"
       },
       {
         id: 3,
-        name: "AWS Solutions Architect",
-        organization: "Amazon Web Services",
-        skills: ["Cloud Computing", "AWS", "Serverless", "Infrastructure"],
-        description: "Certified in designing distributed systems and implementing high-performance architecture on AWS.",
-        link: "https://example.com/certificate-url"
+        name: "MPYSC'39 Innovation Challenge",
+        organization: "MP Government",
+        skills:  ["IoT", "App Development", "Automation", "Innovation", "Problem Solving"],
+        description: "Received third prize in innovation challenge for building a smart home automation system with an integrated app.",
+        type: "Award",
+        link: "https://drive.google.com/file/d/1t3w0EzwXKQDKoEJnu-TZ7v27LsyCJ0Fc/view?usp=sharing"
       },
       {
         id: 4,
-        name: "UI/UX Design Foundations",
-        organization: "Google",
-        skills: ["User Research", "Wireframing", "Prototyping", "Figma"],
-        description: "Mastered the principles of user interface design and user experience research methodologies.",
-        link: "https://example.com/certificate-url"
+        name: "GeeksforGeeks 160 Days Challenge Winner",
+        organization: "GeeksforGeeks",
+        skills:  ["Data Structures", "Algorithms", "Problem Solving", "C++"],
+        description: "Badge awarded for solving problems in GFG’s 160 Days DSA Challenge.",
+        type: "Badge",
+        link: "https://drive.google.com/file/d/1ufMLxl4CRtXUOZSrDIvTQxlIyDqjyS8G/view?usp=sharing"
       },
       {
         id: 5,
-        name: "Cyber Security Fundamentals",
-        organization: "CompTIA",
-        skills: ["Network Security", "Encryption", "Threat Analysis", "Security Protocols"],
-        description: "Comprehensive training in identifying security threats and implementing defense mechanisms.",
-        link: "https://example.com/certificate-url"
+        name: "HackerRank Problem Solving (Basic)",
+        organization: "HackerRank",
+        skills:  ["Basic Algorithms", "Logic Building", "Coding"],
+        description: "Certified for demonstrating foundational problem-solving skills in coding challenges.",
+         type: "Certification",
+        link: "https://drive.google.com/file/d/1-l2muepR0mBitFcIIuzSOq1By1aAMrNu/view?usp=sharing"
       },
       {
         id: 6,
-        name: "Agile Project Management",
-        organization: "Scrum Alliance",
-        skills: ["Scrum", "Kanban", "Sprint Planning", "Team Leadership"],
-        description: "Certified in Agile methodologies with focus on team coordination and iterative development.",
-        link: "https://example.com/certificate-url"
+        name: "HackerRank Problem Solving (Intermediate)",
+        organization: "HackerRank",
+        skills: ["Problem Solving", "Data Structures"],
+        description: "Certified for demonstrating intermediate-level problem-solving proficiency.",
+          type: "Certification",
+        link: "https://drive.google.com/file/d/1q2TeQYEB_FnCQD6mJhWhIh2gbYJOXSel/view?usp=sharing"
+      },
+      {
+        id: 7,
+        name: "LeetCode 365 Days Badge",
+        organization: "LeetCode",
+        skills: ["Algorithms", "Data Structures", "Problem Solving", "C++", "Consistency"],
+        description: "Solved problems on LeetCode for 365 days showcasing problem-solving skills and consistency.",
+        type: "Badge",
+        link: "https://drive.google.com/file/d/1tHo6uC0_Ap5bPJDrhh8rRcuksnO4dMBj/view?usp=sharing"
       }
     ];
     
@@ -109,7 +124,7 @@ const CertificatesSection = () => {
           {certificates.map((certificate, index) => (
             <motion.div
               key={certificate.id}
-              className="relative h-64 perspective-1000"
+              className="relative h-74 perspective-1000"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 * index }}
