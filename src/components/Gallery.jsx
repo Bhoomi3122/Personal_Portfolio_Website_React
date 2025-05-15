@@ -1,5 +1,26 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import image1 from '../assets/image_1.jpeg';
+import image2 from '../assets/image_2.jpeg';
+import image3 from '../assets/image_3.jpeg';
+import image4 from '../assets/image_4.jpeg';
+import image5 from '../assets/image_5.jpeg';
+import image6 from '../assets/image_6.jpeg';
+import image7 from '../assets/image_7.jpeg';
+import image8 from '../assets/image_8.jpeg';
+import image9 from '../assets/image_9.jpeg';
+import image10 from '../assets/image_10.jpeg';
+import image11 from '../assets/image_11.png';
+import image12 from '../assets/image_12.jpg';
+import image13 from '../assets/image_13.jpeg';
+import image14 from '../assets/image_14.jpg';
+import image15 from '../assets/image_15.jpg';
+import image16 from '../assets/image_16.png';
+import image17 from '../assets/image_17.png';
+import image18 from '../assets/image_18.png';
+import image19 from '../assets/image_19.png';
+import image20 from '../assets/image_20.png';
+import image21 from '../assets/image_21.png';
 
 // Gallery Component with true masonry layout
 export default function Gallery() {
@@ -10,139 +31,139 @@ export default function Gallery() {
   const images = [
     {
       id: 1,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image1,
       description: "Modern architectural marvel in downtown metropolis",
       aspectRatio: 1.33 // 4:3
     },
     {
       id: 2,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image2,
       description: "Candid portrait capturing raw human emotion",
       aspectRatio: 0.75 // 3:4
     },
     {
       id: 3,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image4,
       description: "Serene forest landscape at dawn",
       aspectRatio: 1.25 // 5:4
     },
     {
       id: 4,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image7,
       description: "Hidden alleyway in ancient European city",
       aspectRatio: 1.4 // 7:5
     },
     {
       id: 5,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image3,
       description: "Abstract composition exploring form and shadow",
       aspectRatio: 0.67 // 2:3
     },
     {
       id: 6,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image9,
       description: "Vibrant street photography capturing daily life",
       aspectRatio: 1.5 // 3:2
     },
     {
       id: 7,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image8,
       description: "Minimalist study in negative space",
       aspectRatio: 1 // 1:1
     },
     {
       id: 8,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image13,
       description: "Urban landscape transitioning at dusk",
       aspectRatio: 1.6 // 8:5
     },
     {
       id: 9,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image15,
       description: "Culinary artistry from renowned chef",
       aspectRatio: 1.5 // 3:2
     },
     {
       id: 10,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image5,
       description: "Intimate portrait series exploring identity",
       aspectRatio: 0.78 // 7:9
     },
     {
       id: 11,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image6,
       description: "Avant-garde fashion concept shoot",
       aspectRatio: 0.71 // 5:7
     },
     {
       id: 12,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image14,
       description: "Minimalist product photography against textured backdrop",
       aspectRatio: 1 // 1:1
     },
     {
       id: 13,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image12,
       description: "Macro photography revealing hidden details",
       aspectRatio: 1.33 // 4:3
     },
     {
       id: 14,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image17,
       description: "Breathtaking aerial perspective of coastal formations",
       aspectRatio: 1 // 1:1
     },
     {
       id: 15,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image16,
       description: "Experimental photography pushing boundaries",
       aspectRatio: 1.25 // 5:4
     },
     {
       id: 16,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image18,
       description: "Documentary moment capturing historical significance",
       aspectRatio: 1.2 // 6:5
     },
     {
       id: 17,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image20,
       description: "Environmental portrait in subject's creative space",
       aspectRatio: 0.57 // 4:7
     },
     {
       id: 18,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image19,
       description: "Dramatic landscape showcasing natural wonder",
       aspectRatio: 1.75 // 7:4
     },
     {
       id: 19,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image21,
       description: "Timeless black and white composition",
       aspectRatio: 1 // 1:1
     },
     {
       id: 20,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image18,
       description: "Architectural study of light and geometry",
       aspectRatio: 1.29 // 9:7
     },
     {
       id: 21,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image15,
       description: "Urban street art reflecting cultural movement",
       aspectRatio: 1.5 // 3:2
     },
     {
       id: 22,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image21,
       description: "Conceptual piece exploring modern themes",
       aspectRatio: 1 // 1:1
     },
     {
       id: 23,
-      url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh&resize=1200:*",
+      url: image11,
       description: "Night photography capturing city in motion",
       aspectRatio: 0.83 // 5:6
     },
