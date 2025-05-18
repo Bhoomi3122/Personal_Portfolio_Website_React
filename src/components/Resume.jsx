@@ -83,11 +83,12 @@ const buttonVariants = {
 export default function ResumeComponent() {
   const [isHovered, setIsHovered] = useState(false);
 
-  const viewResume = () => window.open("https://drive.google.com/file/d/1OQt0qM938zfhNhShFrN_pMuB5hu-jUiD/view?usp=sharing", "_blank");
+  const viewResume = () => window.open("https://drive.google.com/file/d/1733sPPHoNQg4mXOiI6hiD_JP6DFTPU8X/view?usp=sharing", "_blank");
   
   const downloadResume = () => {
     // Creating a direct link to download the file
-    window.open("https://drive.google.com/uc?export=download&id=1OQt0qM938zfhNhShFrN_pMuB5hu-jUiD", "_blank");
+    window.open("https://drive.google.com/uc?export=download&id=1733sPPHoNQg4mXOiI6hiD_JP6DFTPU8X", "_blank");
+
   };
   
 
