@@ -11,7 +11,6 @@ function Navbar() {
   { name: 'Projects', link: 'projects' },
   { name: 'Accomplishments', link: 'accomplishments' },
   { name: 'Certificates', link: 'certificates' },
-  { name: 'Gallery', link: 'gallery' },
   { name: 'Contact Me', link: 'contact' },
 ];
 

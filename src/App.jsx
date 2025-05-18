@@ -15,7 +15,6 @@ import Accomplishments from "./components/Accomplishments";
 import Resume from './components/Resume';
 import About from './components/About';
 import Contact from './components/Contact';
-import Gallery from './components/Gallery';
 import { ToastContainer } from 'react-toastify';
 import Certificates from "./components/Certificates"
 import 'react-toastify/dist/ReactToastify.css';
@@ -40,7 +39,6 @@ function App() {
                 <Route path='/about' element={<About/>}/>
                 <Route path='/contact' element={<Contact/>}/>
                 <Route path='/certificates' element={<Certificates/>}/>
-                <Route path='/gallery' element={<Gallery/>}/>
               </Routes>
             </AnimatePresence>
           </main>
