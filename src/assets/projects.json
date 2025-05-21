@@ -6,7 +6,7 @@
     "longDescription": "Sahayak is a full-stack application that empowers women by giving them a safe space to raise security issues, share concerns, read others’ experiences, access informative blogs, and find helpline numbers. It addresses the lack of centralized platforms for women to discuss personal safety issues. Built using React, Node.js, Express.js, and MongoDB, it aims to foster awareness and community-driven safety improvements.",
     "image": "https://img.freepik.com/premium-vector/diverse-group-womens-hands-putting-together-teamwork-unity-concept_1323048-61227.jpg?semt=ais_hybrid",
     "techStack": ["React", "Node.js", "MongoDB", "Express.js"],
-    "status": "Pending",
+    "status": "Completed",
     "keyFeatures": [
       "Users can create posts about security concerns and read others' experiences.",
       "Explore blogs to stay informed on women's safety and preventive measures.",
