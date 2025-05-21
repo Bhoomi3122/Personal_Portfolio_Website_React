@@ -20,7 +20,17 @@ const CertificatesSection = () => {
         link: "https://certificates.cs50.io/89b20d9e-a2bf-424c-844a-318c6cfe49ac.pdf?size=letter"
       },
       {
-        id: 2,
+  id: 2,
+  name: "Getting Started with Competitive Programming",
+  organization: "IIT Gandhinagar (NPTEL)",
+  skills: ["C++", "Competitive Programming", "Data Structures", "Algorithms", "Graphs", "Dynamic Programming", "Greedy Algorithms"],
+  description: "Completed the NPTEL course with a score of 85/100, ranked among the top 5%. The course covered advanced DSA topics including graphs, dynamic programming, greedy approach, and more.",
+  type: "Certification",
+  link: "https://drive.google.com/file/d/1fJt21nbynzqhNP7hrCe1qfuuY8ngTiR7/view?usp=sharing"
+}
+,
+      {
+        id: 3,
         name: "NPTEL IIT BOMBAY'S Demystifying Networks",
         organization: "IIT Bombay – NPTEL",
         skills: ["Computer Networks", "TCP/IP", "OSI Model", "Protocols"],
@@ -29,7 +39,7 @@ const CertificatesSection = () => {
         link: "https://drive.google.com/file/d/1F7diJ5C3ZZikHrESOZBnpF85YIpgok9H/view?usp=sharing"
       },
       {
-        id: 3,
+        id: 4,
         name: "MPYSC'39 Innovation Challenge",
         organization: "MP Government",
         skills:  ["IoT", "App Development", "Automation", "Innovation", "Problem Solving"],
@@ -38,7 +48,7 @@ const CertificatesSection = () => {
         link: "https://drive.google.com/file/d/1t3w0EzwXKQDKoEJnu-TZ7v27LsyCJ0Fc/view?usp=sharing"
       },
       {
-        id: 4,
+        id: 5,
         name: "GeeksforGeeks 160 Days Challenge Winner",
         organization: "GeeksforGeeks",
         skills:  ["Data Structures", "Algorithms", "Problem Solving", "C++"],
@@ -47,7 +57,7 @@ const CertificatesSection = () => {
         link: "https://drive.google.com/file/d/1ufMLxl4CRtXUOZSrDIvTQxlIyDqjyS8G/view?usp=sharing"
       },
       {
-        id: 5,
+        id: 6,
         name: "HackerRank Problem Solving (Basic)",
         organization: "HackerRank",
         skills:  ["Basic Algorithms", "Logic Building", "Coding"],
@@ -56,7 +66,7 @@ const CertificatesSection = () => {
         link: "https://drive.google.com/file/d/1-l2muepR0mBitFcIIuzSOq1By1aAMrNu/view?usp=sharing"
       },
       {
-        id: 6,
+        id: 7,
         name: "HackerRank Problem Solving (Intermediate)",
         organization: "HackerRank",
         skills: ["Problem Solving", "Data Structures"],
@@ -65,7 +75,7 @@ const CertificatesSection = () => {
         link: "https://drive.google.com/file/d/1q2TeQYEB_FnCQD6mJhWhIh2gbYJOXSel/view?usp=sharing"
       },
       {
-        id: 7,
+        id: 8,
         name: "LeetCode 365 Days Badge",
         organization: "LeetCode",
         skills: ["Algorithms", "Data Structures", "Problem Solving", "C++", "Consistency"],
