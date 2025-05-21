@@ -10,8 +10,18 @@ const CertificatesSection = () => {
   useEffect(() => {
     // Mock data
     const mockCertificates = [
+      
       {
-        id: 1,
+  id: 1,
+  name: "Getting Started with Competitive Programming",
+  organization: "IIT Gandhinagar (NPTEL)",
+  skills: ["C++", "Competitive Programming", "Data Structures", "Algorithms", "Graphs", "Dynamic Programming", "Greedy Algorithms"],
+  description: "Completed the NPTEL course with a score of 85/100, ranked among the top 5%. The course covered advanced DSA topics including graphs, dynamic programming, greedy approach, and more.",
+  type: "Certification",
+  link: "https://drive.google.com/file/d/1fJt21nbynzqhNP7hrCe1qfuuY8ngTiR7/view?usp=sharing"
+},
+{
+        id: 2,
         name: "CS50 Web Development using Python and JavaScript",
         organization: "Harvard University (edX)",
         skills: ["Python", "JavaScript", "HTML", "CSS", "Git", "CI/CD", "Web Development"],
@@ -19,16 +29,7 @@ const CertificatesSection = () => {
         type: "Certification",
         link: "https://certificates.cs50.io/89b20d9e-a2bf-424c-844a-318c6cfe49ac.pdf?size=letter"
       },
-      {
-  id: 2,
-  name: "Getting Started with Competitive Programming",
-  organization: "IIT Gandhinagar (NPTEL)",
-  skills: ["C++", "Competitive Programming", "Data Structures", "Algorithms", "Graphs", "Dynamic Programming", "Greedy Algorithms"],
-  description: "Completed the NPTEL course with a score of 85/100, ranked among the top 5%. The course covered advanced DSA topics including graphs, dynamic programming, greedy approach, and more.",
-  type: "Certification",
-  link: "https://drive.google.com/file/d/1fJt21nbynzqhNP7hrCe1qfuuY8ngTiR7/view?usp=sharing"
-}
-,
+
       {
         id: 3,
         name: "NPTEL IIT BOMBAY'S Demystifying Networks",
