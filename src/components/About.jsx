@@ -8,7 +8,6 @@ import { FaHackerrank } from 'react-icons/fa';
 import { 
   Code, 
   Quote, 
-  Coffee, 
   Zap, 
   Palette, 
   Github, 
@@ -287,7 +286,7 @@ export default function AboutMeSection() {
         variants={itemVariants}
       >
         <p className="text-lg text-slate-300 leading-relaxed">
-        I am a 3rd-year Computer Science and Design student at MITS-DU Gwalior, passionate about web development, data structures, and solving real-world problems while continuously growing my skills in the tech world.
+        I am a final year Computer Science and Design student at MITS-DU Gwalior, passionate about web development, data structures, and solving real-world problems while continuously growing my skills in the tech world.
         </p>
       </motion.div>
 
@@ -295,10 +294,6 @@ export default function AboutMeSection() {
       <motion.div 
         className="mb-10 bg-gradient-to-r from-slate-800 to-slate-900 p-6 rounded-lg border-l-4 border-sky-400 shadow-sm relative overflow-hidden"
         variants={itemVariants}
-        whileHover={{ 
-          scale: 1.02,
-          boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2)"
-        }}
         transition={{ type: "spring", stiffness: 300 }}
       >
         <div className="flex items-start gap-3 relative z-10">
@@ -367,147 +362,9 @@ export default function AboutMeSection() {
           </motion.div>
           
           {/* Fun facts section - ENHANCED */}
-          <motion.div variants={itemVariants} className="relative">
-            <div className="flex items-center gap-2 mb-4">
-              <motion.div
-                animate={{ rotate: [0, 10, 0, -10, 0] }}
-                transition={{ duration: 5, repeat: Infinity }}
-              >
-                <Sparkles className="text-sky-400" size={20} />
-              </motion.div>
-              <h3 className="text-xl font-semibold text-slate-100 border-b border-slate-700 pb-2 flex-grow">
-                Fun Facts
-              </h3>
-            </div>
-
-            {/* Orbiting star around fun facts */}
-            <motion.div 
-              className="absolute -z-10 opacity-70"
-              style={{ width: '100%', height: '100%', top: 30, left: 0 }}
-              variants={orbitVariants}
-              animate="animate"
-            >
-              <motion.div 
-                className="absolute w-6 h-6"
-                style={{ top: '10%', left: '80%' }}
-                variants={starVariants}
-                animate="animate"
-              >
-                <Star size={24} className="text-sky-300" />
-              </motion.div>
-            </motion.div>
-            
-            <div className="space-y-4">
-              {funFacts.map((fact, index) => (
-                <motion.div
-                  key={index}
-                  className={`flex items-center gap-3 p-4 bg-gradient-to-r ${fact.bgStart} ${fact.bgEnd} rounded-lg relative overflow-hidden border border-slate-700`}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 + 0.5 }}
-                  whileHover={{ 
-                    scale: 1.03, 
-                    boxShadow: "0 8px 15px rgba(0,0,0,0.3)",
-                    y: -3
-                  }}
-                  onHoverStart={() => setHoveredFactIndex(index)}
-                  onHoverEnd={() => setHoveredFactIndex(null)}
-                >
-                  <motion.div 
-                    className={`p-2 ${fact.color} rounded-full shadow-md text-slate-900`}
-                    animate={{ rotate: hoveredFactIndex === index ? 360 : 0 }}
-                    transition={{ duration: 0.6 }}
-                  >
-                    {fact.icon}
-                  </motion.div>
-                  <span className="text-slate-300 font-medium">{fact.text}</span>
-
-                  {/* Background decorative elements for fun facts */}
-                  <motion.div 
-                    className="absolute -right-2 -bottom-2 w-12 h-12 bg-sky-400 rounded-full opacity-10"
-                    animate={{ 
-                      scale: hoveredFactIndex === index ? [1, 1.2, 1] : 1,
-                    }}
-                    transition={{ duration: 1.5, repeat: hoveredFactIndex === index ? Infinity : 0 }}
-                  />
-                  <motion.div 
-                    className="absolute right-1/4 top-0 w-3 h-3 bg-cyan-400 rounded-full opacity-20"
-                    animate={{ 
-                      y: hoveredFactIndex === index ? [0, 5, 0] : 0,
-                    }}
-                    transition={{ duration: 2, repeat: hoveredFactIndex === index ? Infinity : 0 }}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-        
-        {/* Right column */}
-        <div>
-          {/* Personality traits - ENHANCED */}
-          <motion.div variants={itemVariants} className="mb-8 relative">
-            <div className="flex items-center gap-2 mb-4">
-              <motion.div
-                animate={{ rotate: [0, -10, 0, 10, 0] }}
-                transition={{ duration: 6, repeat: Infinity }}
-              >
-                <Brain className="text-sky-400" size={20} />
-              </motion.div>
-              <h3 className="text-xl font-semibold text-slate-100 border-b border-slate-700 pb-2 flex-grow">
-                Personality
-              </h3>
-            </div>
-            
-            {/* Orbiting elements around personality */}
-            <motion.div 
-              className="absolute -z-10 w-full h-full top-0 left-0"
-              variants={orbitVariants}
-              animate="animate"
-              style={{ animationDirection: "reverse" }}
-            >
-              <motion.div 
-                className="absolute w-4 h-4 bg-sky-400 rounded-full opacity-20"
-                style={{ top: '30%', right: '10%' }}
-              />
-            </motion.div>
-            
-            <ul className="space-y-4">
-              {traits.map((trait, index) => (
-                <motion.li
-                  key={index}
-                  className="flex items-center gap-3 p-3 bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700 rounded-lg shadow-sm"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.15 + 0.3 }}
-                  whileHover={{ 
-                    scale: 1.02, 
-                    boxShadow: "0 6px 12px rgba(0,0,0,0.2)",
-                    borderColor: "rgb(125, 211, 252, 0.3)" 
-                  }}
-                >
-                  <motion.div 
-                    className={`${trait.color}`}
-                    whileHover={{ rotate: [0, -10, 10, -10, 0] }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    {trait.icon}
-                  </motion.div>
-                  <span className="text-slate-300">{trait.text}</span>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-          
-          {/* Goals section - ENHANCED */}
           <motion.div 
             variants={itemVariants}
-            className="p-6 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg shadow-sm relative overflow-hidden border border-slate-700"
-            whileHover={{ 
-              scale: 1.03, 
-              boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2)",
-              borderColor: "rgb(125, 211, 252, 0.3)"
-            }}
+            className="p-6 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg shadow-sm relative overflow-hidden border border-slate-700 mt-10"
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="flex items-center gap-3 mb-3 relative z-10">
@@ -554,6 +411,82 @@ export default function AboutMeSection() {
               transition={{ duration: 5, repeat: Infinity }}
             />
           </motion.div>
+        </div>
+        
+        {/* Right column */}
+        <div>
+           <motion.div variants={itemVariants} className="relative">
+            <div className="flex items-center gap-2 mb-4">
+              <motion.div
+                animate={{ rotate: [0, 10, 0, -10, 0] }}
+                transition={{ duration: 5, repeat: Infinity }}
+              >
+                <Sparkles className="text-sky-400" size={20} />
+              </motion.div>
+              <h3 className="text-xl font-semibold text-slate-100 border-b border-slate-700 pb-2 flex-grow">
+                Fun Facts
+              </h3>
+            </div>
+
+            {/* Orbiting star around fun facts */}
+            <motion.div 
+              className="absolute -z-10 opacity-70"
+              style={{ width: '100%', height: '100%', top: 30, left: 0 }}
+              variants={orbitVariants}
+              animate="animate"
+            >
+              <motion.div 
+                className="absolute w-6 h-6"
+                style={{ top: '10%', left: '80%' }}
+                variants={starVariants}
+                animate="animate"
+              >
+                <Star size={24} className="text-sky-300" />
+              </motion.div>
+              
+            </motion.div>
+            
+            <div className="space-y-4">
+              {funFacts.map((fact, index) => (
+                <motion.div
+                  key={index}
+                  className={`flex items-center gap-3 p-4 bg-gradient-to-r ${fact.bgStart} ${fact.bgEnd} rounded-lg relative overflow-hidden border border-slate-700`}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.1 + 0.5 }}
+                  onHoverStart={() => setHoveredFactIndex(index)}
+                  onHoverEnd={() => setHoveredFactIndex(null)}
+                >
+                  <motion.div 
+                    className={`p-2 ${fact.color} rounded-full shadow-md text-slate-900`}
+                    animate={{ rotate: hoveredFactIndex === index ? 360 : 0 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    {fact.icon}
+                  </motion.div>
+                  <span className="text-slate-300 font-medium">{fact.text}</span>
+
+                  {/* Background decorative elements for fun facts */}
+                  <motion.div 
+                    className="absolute -right-2 -bottom-2 w-12 h-12 bg-sky-400 rounded-full opacity-10"
+                    animate={{ 
+                      scale: hoveredFactIndex === index ? [1, 1.2, 1] : 1,
+                    }}
+                    transition={{ duration: 1.5, repeat: hoveredFactIndex === index ? Infinity : 0 }}
+                  />
+                  <motion.div 
+                    className="absolute right-1/4 top-0 w-3 h-3 bg-cyan-400 rounded-full opacity-20"
+                    animate={{ 
+                      y: hoveredFactIndex === index ? [0, 5, 0] : 0,
+                    }}
+                    transition={{ duration: 2, repeat: hoveredFactIndex === index ? Infinity : 0 }}
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+          {/* Goals section - ENHANCED */}
+         
         </div>
       </div>
       

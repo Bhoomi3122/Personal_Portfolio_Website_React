@@ -31,12 +31,12 @@ const Projects = () => {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-4xl font-bold text-center mb-4 text-[#b1ddf2]"
+        className="text-2xl font-bold text-center mb-4 text-[#b1ddf2]"
       >
         My Projects
       </motion.h1>
       <motion.div
-  className="w-24 h-1 mx-auto mb-8 rounded-full bg-gradient-to-r from-[#7dd3fc] via-[#a5b4fc] via-40% via-[#f9a8d4] to-[#22d3ee]"
+  className="w-24 h-1 mx-auto mb-8 rounded-full bg-gradient-to-r from-[#7dd3fc] via-[#a5b4fc] via-40% via-[#f9a8d4] to-[#22d3ee] -mt-3"
   initial={{ width: 0 }}
   animate={{ width: "6rem" }}
   transition={{ delay: 0.4, duration: 1 }}
@@ -45,7 +45,7 @@ const Projects = () => {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-xl text-center text-text-color mb-8 max-w-2xl mx-auto"
+        className="text-lg text-center text-text-color mb-8 max-w-2xl mx-auto -mt-4"
       >
         Explore my latest work and side projects that showcase my skills and passion for development.
       </motion.p>

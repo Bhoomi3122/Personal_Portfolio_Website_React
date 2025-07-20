@@ -141,8 +141,8 @@ export default function ResumeComponent() {
               </div>
             </div>
 
-            <h2 className="text-2xl font-bold mb-4 text-center text-[#bae6fd]">Bhoomi Garg</h2>
-            <p className="text-lg mb-6 text-center text-[#93c5fd]">Computer Science and Design Student</p>
+            <h2 className="text-xl font-bold mb-4 text-center text-[#bae6fd]">Bhoomi Garg</h2>
+            <p className="text-md mb-6 text-center text-[#93c5fd]">Computer Science and Design Student</p>
 
             <div className="space-y-4 text-sm">
               <div className="flex items-center gap-3 text-[#93c5fd] hover:text-[#7dd3fc] transition-colors">
@@ -179,7 +179,7 @@ export default function ResumeComponent() {
           className="w-full md:w-3/5 bg-gradient-to-br from-[#082f49] to-[#0f172a] p-8"
           variants={itemVariants}
         >
-          <motion.h1 className="text-3xl font-bold mb-2 text-[#bae6fd]" variants={itemVariants}>
+          <motion.h1 className="text-xl font-bold mb-2 mt-4 text-[#bae6fd]" variants={itemVariants}>
             Professional Resume
           </motion.h1>
           <motion.p className="text-[#93c5fd] mb-8" variants={itemVariants}>
@@ -189,14 +189,14 @@ export default function ResumeComponent() {
           <motion.div className="mb-8" variants={itemVariants}>
             <div className="flex items-center gap-2 mb-4">
               <GraduationCap className="text-[#7dd3fc]" />
-              <h2 className="text-xl font-semibold text-[#bae6fd]">Education</h2>
+              <h2 className="text-lg font-semibold text-[#bae6fd]">Education</h2>
             </div>
 
             <div className="border-l-2 border-[#7dd3fc] pl-4 mb-6">
-              <h3 className="font-semibold text-[#bae6fd]">
+              <h4 className="font-semibold text-[#bae6fd]">
                 Madhav Institute of Technology and Science, Gwalior
-              </h3><br/>
-              <p className="text-sm text-[#93c5fd]">
+              </h4><br/>
+              <p className="text-sm text-[#93c5fd] -mt-4">
                 B.Tech in Computer Science and Design
               </p>
               <p className="text-sm text-[#93c5fd]">
@@ -205,15 +205,20 @@ export default function ResumeComponent() {
               <p className="text-sm text-[#93c5fd]">
                 Graduating: 2026
               </p>
-              <p className="text-sm text-[#38bdf8] mt-1">
-                Current CGPA: 8.95 (Highest in class)
+              <p className="text-sm text-[#93c5fd] mt-1">
+                Current CGPA: 8.96 
               </p>
             </div>
 
             <div className="border-l-2 border-[#7dd3fc]/50 pl-4">
-              <h3 className="font-semibold text-[#bae6fd]">Class 12th - CBSE</h3><br/>
-              <p className="text-sm text-[#93c5fd]">Percentage: 93.6% </p>
+              <h4 className="font-semibold text-[#bae6fd]">Class 12th - CBSE</h4><br/>
+              <p className="text-sm text-[#93c5fd] -mt-4">Percentage: 93.6% </p>
               <p className="text-sm text-[#93c5fd]">Year: 2021</p>
+            </div>
+            <div className="border-l-2 border-[#7dd3fc]/50 pl-4 mt-8">
+              <h4 className="font-semibold text-[#bae6fd]">Class 10th - CBSE</h4><br/>
+              <p className="text-sm text-[#93c5fd] -mt-4">Percentage: 94.8% </p>
+              <p className="text-sm text-[#93c5fd]">Year: 2019</p>
             </div>
           </motion.div>
 

@@ -121,7 +121,7 @@ const ContactForm = () => {
       >
         <div className="text-center mb-8">
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-cyan-300"
+            className="text-2xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-cyan-300"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
@@ -129,7 +129,7 @@ const ContactForm = () => {
             Get In Touch
           </motion.h2>
           <motion.p 
-            className="mt-2 text-lg text-slate-200"
+            className="mt-2 text-md text-slate-200"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
@@ -157,7 +157,7 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full pl-10 pr-4 py-3 bg-slate-800/60 border border-sky-300/20 rounded-lg focus:ring-2 focus:ring-sky-300/50 focus:border-sky-300/50 transition-all duration-300 outline-none backdrop-blur-sm text-slate-100"
+              className="w-full text-sm pl-10 pr-4 py-3 bg-slate-800/60 border border-sky-300/20 rounded-lg focus:ring-2 focus:ring-sky-300/50 focus:border-sky-300/50 transition-all duration-300 outline-none backdrop-blur-sm text-slate-100"
               placeholder="Your Name"
             />
             <motion.div 
@@ -179,7 +179,7 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full pl-10 pr-4 py-3 bg-slate-800/60 border border-sky-300/20 rounded-lg focus:ring-2 focus:ring-sky-300/50 focus:border-sky-300/50 transition-all duration-300 outline-none backdrop-blur-sm text-slate-100"
+              className="w-full text-sm pl-10 pr-4 py-3 bg-slate-800/60 border border-sky-300/20 rounded-lg focus:ring-2 focus:ring-sky-300/50 focus:border-sky-300/50 transition-all duration-300 outline-none backdrop-blur-sm text-slate-100"
               placeholder="Your Email"
             />
             <motion.div 
@@ -201,7 +201,7 @@ const ContactForm = () => {
               onChange={handleChange}
               required
               rows={4}
-              className="w-full pl-10 pr-4 py-3 bg-slate-800/60 border border-sky-300/20 rounded-lg focus:ring-2 focus:ring-sky-300/50 focus:border-sky-300/50 transition-all duration-300 outline-none backdrop-blur-sm resize-none text-slate-100"
+              className="w-full text-sm pl-10 pr-4 py-3 bg-slate-800/60 border border-sky-300/20 rounded-lg focus:ring-2 focus:ring-sky-300/50 focus:border-sky-300/50 transition-all duration-300 outline-none backdrop-blur-sm resize-none text-slate-100"
               placeholder="Your Message"
             />
             <motion.div 
@@ -219,11 +219,11 @@ const ContactForm = () => {
           >
             <motion.button
               type="submit"
-              className="group relative overflow-hidden px-8 py-3 bg-gradient-to-r from-sky-300 to-cyan-300 text-slate-900 font-medium rounded-lg shadow-lg flex items-center gap-2"
+              className="group relative overflow-hidden px-8 py-3 bg-gradient-to-r from-sky-300 to-cyan-300 text-slate-900 font-medium rounded-lg shadow-lg flex items-center gap-2 "
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >
-              <span>Send Message</span>
+              <span className='text-md'>Send Message</span>
               <motion.span
                 initial={{ x: 0 }}
                 animate={{ x: 5 }}

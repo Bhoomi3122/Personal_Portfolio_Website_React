@@ -21,36 +21,36 @@ export default function AccomplishmentsSection() {
     <div className="max-w-6xl mx-auto px-4 py-16 bg-transparent text-gray-800 dark:text-gray-100">
       <SectionHeader title="Professional Accomplishments" />
       <div className="flex justify-center mb-12">
-  <div className="flex p-1 bg-blue-100 dark:bg-gray-700 rounded-full shadow-inner">
-    <TabButton
-      active={activeTab === "leadership"}
-      onClick={() => setActiveTab("leadership")}
-      label="Leadership Activities"
-    />
-    <TabButton
-      active={activeTab === "achievements"}
-      onClick={() => setActiveTab("achievements")}
-      label="Achievements"
-    />
-  </div>
-</div>
+        <div className="flex -mt-8 p-1 bg-blue-100 dark:bg-gray-700 rounded-full shadow-inner">
+          <TabButton
+            active={activeTab === "leadership"}
+            onClick={() => setActiveTab("leadership")}
+            label="Leadership Activities"
+          />
+          <TabButton
+            active={activeTab === "achievements"}
+            onClick={() => setActiveTab("achievements")}
+            label="Achievements"
+          />
+        </div>
+      </div>
 
 
-<AnimatePresence mode="wait">
-  <motion.div
-    key={activeTab}
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -20 }}
-    transition={{ duration: 0.3 }}
-  >
-    {activeTab === "leadership" ? (
-      <LeadershipGrid items={accomplishments.leadershipActivities} />
-    ) : (
-      <AchievementsGrid items={accomplishments.achievements_certifications} />
-    )}
-  </motion.div>
-</AnimatePresence>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeTab}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
+        >
+          {activeTab === "leadership" ? (
+            <LeadershipGrid items={accomplishments.leadershipActivities} />
+          ) : (
+            <AchievementsGrid items={accomplishments.achievements_certifications} />
+          )}
+        </motion.div>
+      </AnimatePresence>
 
     </div>
   );
@@ -92,11 +92,11 @@ function SectionHeader({ title }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <h1 className="text-4xl font-bold mb-4 bg-clip-text text-[#b1ddf2] bg-gradient-to-r from-teal-400 to-indigo-400 dark:from-teal-300 dark:to-indigo-300">
+      <h1 className="text-2xl font-bold mb-4 bg-clip-text text-[#b1ddf2] bg-gradient-to-r from-teal-400 to-indigo-400 dark:from-teal-300 dark:to-indigo-300">
         {title}
       </h1>
       <motion.div
-        className="w-24 h-1 mx-auto mb-8 rounded-full bg-gradient-to-r from-[#7dd3fc] via-[#a5b4fc] via-40% via-[#f9a8d4] to-[#22d3ee]"
+        className="w-24 h-1 -mt-3 mx-auto mb-2 rounded-full bg-gradient-to-r from-[#7dd3fc] via-[#a5b4fc] via-40% via-[#f9a8d4] to-[#22d3ee]"
         initial={{ width: 0 }}
         animate={{ width: "6rem" }}
         transition={{ delay: 0.4, duration: 1 }}
@@ -155,7 +155,7 @@ function AccomplishmentCard({ item, index }) {
       className="h-full"
     >
       <motion.div
-        className={`rounded-xl shadow-md overflow-hidden h-full cursor-pointer relative border transition-all duration-300 ${borderColor}`}
+        className={`rounded-xl shadow-md overflow-hidden h-50 cursor-pointer relative border transition-all duration-300 ${borderColor}`}
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
         onClick={() => setIsExpanded(!isExpanded)}
@@ -192,7 +192,7 @@ function AccomplishmentCard({ item, index }) {
                 transition={{ duration: 2, repeat: Infinity, repeatDelay: index * 0.5 }}
               />
             </motion.div>
-            <h3 className="text-lg font-semibold text-[#c5ebfc]">{item.title}</h3>
+            <h3 className="text-md font-semibold text-[#c5ebfc]">{item.title}</h3>
           </motion.div>
 
           <motion.p className="mb-4 text-[#f0f3f7]" layout>

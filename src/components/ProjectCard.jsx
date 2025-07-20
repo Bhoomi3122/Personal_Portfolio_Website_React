@@ -10,11 +10,10 @@ const ProjectCard = ({ project }) => {
       exit={{ opacity: 0, y: -20 }}
       whileHover={{ y: -5, scale: 1.02 }}
       transition={{ duration: 0.5 }}
-      className="bg-primary-dark rounded-xl border border-primary-gradient-1 border-opacity-30 overflow-hidden shadow-lg hover:shadow-[0_0_18px_rgba(34,211,238,0.3)] transition-all duration-500"
+      className="bg-primary-dark rounded-lg border border-primary-gradient-1 border-opacity-30 overflow-hidden shadow-lg hover:shadow-[0_0_18px_rgba(34,211,238,0.3)] transition-all duration-500"
     >
       <div className="relative h-48 overflow-hidden">
         <motion.img
-          whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
           src={project.image}
           alt={project.title}
@@ -24,9 +23,9 @@ const ProjectCard = ({ project }) => {
 
       <div className="p-6">
         <div className="flex justify-between items-start mb-3">
-          <h3 className="text-xl font-bold text-white">{project.title}</h3>
+          <h3 className="text-lg font-bold text-white -mt-3 mr-3">{project.title}</h3>
           <span
-            className={`px-3 py-1 rounded-full text-xs font-semibold border ${
+            className={`px-3 -mt-2 -mr-3 py-1 rounded-full text-xs font-semibold border ${
               project.status === "Completed"
                 ? "bg-emerald-500/20 text-emerald-400 border-emerald-400"
                 : "bg-orange-500/20 text-orange-400 border-orange-400"

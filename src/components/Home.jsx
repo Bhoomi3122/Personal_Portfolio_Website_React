@@ -188,7 +188,7 @@ function Home() {
             whileHover={{ y: -5 }}
           >
             <div className="mr-4 text-4xl font-bold text-blue-300">
-              <Counter targetNumber={800} />+
+              <Counter targetNumber={900} />+
             </div>
             <div className="text-gray-200">
               <div className="text-sm uppercase tracking-wide">DSA Problems</div>
