@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import projectsData from "../assets/projects.json";
 import { FaArrowLeft } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import TechIcon from "../components/TechIcon";
 
 const ProjectDetails = () => {
@@ -40,46 +41,46 @@ const ProjectDetails = () => {
       </Link>
 
       <div className="bg-[#1e293b] rounded-lg shadow-lg overflow-hidden">
-        <div className="relative h-64 md:h-96 overflow-hidden">
-          <motion.img
-            initial={{ scale: 1.1, opacity: 0.8 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-            <div className="p-6 w-full">
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3 }}
-              >
-                <h1 className="text-3xl md:text-4xl font-bold text-[#f1f5f9] mb-2">
-                  {project.title}
-                </h1>
-                <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${
-                  project.status === "Completed" 
-                    ? "bg-green-500 text-white" 
-                    : "bg-yellow-500 text-white"
-                }`}>
-                  {project.status}
-                </span>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-
         <div className="p-6 md:p-8">
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="mb-6"
+          >
+            <h1 className="text-2xl font-bold text-[#f1f5f9] flex items-center gap-2">
+              {project.title}
+              {project.demoLink && (
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#7dd3fc] hover:text-[#22d3ee] text-xl"
+                  title="View Demo"
+                >
+                  <FiExternalLink />
+                </a>
+              )}
+            </h1>
+          </motion.div>
+
+          <span
+            className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-6 ${project.status === "Completed"
+                ? "bg-green-500 text-white"
+                : "bg-yellow-500 text-white"
+              }`}
+          >
+            {project.status}
+          </span>
+
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="mb-8"
           >
-            <h2 className="text-2xl font-bold text-[#f1f5f9] mb-4">About This Project</h2>
-            <p className="text-[#d1d5db] text-lg leading-relaxed">
+            <h2 className="text-xl font-bold text-[#f1f5f9] mb-4">About This Project</h2>
+            <p className="text-[#d1d5db] text-md leading-relaxed">
               {project.longDescription}
             </p>
           </motion.div>
@@ -90,14 +91,12 @@ const ProjectDetails = () => {
             transition={{ delay: 0.5 }}
             className="mb-8"
           >
-            <h2 className="text-2xl font-bold text-[#f1f5f9] mb-4">Technologies Used</h2>
+            <h2 className="text-xl font-bold text-[#f1f5f9] mb-4">Technologies Used</h2>
             <div className="flex flex-wrap gap-6">
               {project.techStack.map((tech, index) => (
-                <TechIcon 
-                  key={index}
-                  tech={tech}
-                  delay={index * 0.1}
-                />
+                <div key={index} className="text-white opacity-70">
+                  <TechIcon tech={tech} delay={index * 0.1} />
+                </div>
               ))}
             </div>
           </motion.div>
@@ -107,17 +106,17 @@ const ProjectDetails = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <h2 className="text-2xl font-bold text-[#f1f5f9] mb-4">Key Features</h2>
+            <h2 className="text-xl font-bold text-[#f1f5f9] mb-4">Key Features</h2>
             <ul className="space-y-3">
               {project.keyFeatures.map((feature, index) => (
                 <motion.li
                   key={index}
                   initial={{ x: -20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: 0.7 + (index * 0.1) }}
+                  transition={{ delay: 0.7 + index * 0.1 }}
                   className="flex items-start"
                 >
-                  <span className="inline-block h-6 w-6 rounded-full bg-[#7dd3fc]/20 text-[#7dd3fc] flex items-center justify-center mr-3 mt-0.5">
+                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-[#7dd3fc]/20 text-[#7dd3fc] text-xs font-semibold mr-3">
                     {index + 1}
                   </span>
                   <span className="text-[#d1d5db]">{feature}</span>

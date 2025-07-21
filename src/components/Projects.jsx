@@ -52,7 +52,7 @@ const Projects = () => {
       
       <div className="flex justify-center mb-8" id="projects">
   <div className="inline-flex rounded-full bg-primary-dark p-1 shadow-md">
-    {["all", "completed", "pending"].map((type, index) => (
+    {["all", "completed", "ongoing"].map((type, index) => (
       <button
         key={index}
         onClick={() => setFilter(type)}
