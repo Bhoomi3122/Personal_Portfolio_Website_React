@@ -10,28 +10,37 @@ const CertificatesSection = () => {
   useEffect(() => {
     // Mock data
     const mockCertificates = [
-
       {
         id: 1,
+        name: "Google Launchpad Upskilling Program",
+        organization: "Google",
+        skills: ["Problem Solving", "Data Structures", "Communication", "Interview Preparation"],
+        description: "Completed the Google Launchpad Upskilling Program with training in problem-solving, data structures, communication skills, and interview preparation techniques.",
+        type: "Program",
+        link: "https://drive.google.com/file/d/1TEAoz_NXK7hILckIJiapa0ZqhamIYofn/view?usp=sharing"
+      },
+      {
+
+        id: 2,
         name: "Getting Started with Competitive Programming",
         organization: "IIT Gandhinagar (NPTEL)",
-        skills: ["C++", "Competitive Programming", "Data Structures", "Algorithms", "Graphs", "Dynamic Programming", "Greedy Algorithms"],
+        skills: ["C++", "Competitive Programming", "Data Structures", "Algorithms"],
         description: "Completed the NPTEL course with a score of 85/100, ranked among the top 5%. The course covered advanced DSA topics including graphs, dynamic programming, greedy approach, and more.",
         type: "Certification",
         link: "https://drive.google.com/file/d/1fJt21nbynzqhNP7hrCe1qfuuY8ngTiR7/view?usp=sharing"
       },
       {
-        id: 2,
+        id: 3,
         name: "CS50 Web Development using Python and JavaScript",
         organization: "Harvard University (edX)",
-        skills: ["Python", "JavaScript", "HTML", "CSS", "Git", "CI/CD", "Web Development"],
+        skills: ["Python", "JavaScript", "Git", "CI/CD", "Web Development"],
         description: "Learnt web development fundamentals, Python, JavaScript, Git, CI/CD principles, and other web fundamentals.",
         type: "Certification",
         link: "https://certificates.cs50.io/89b20d9e-a2bf-424c-844a-318c6cfe49ac.pdf?size=letter"
       },
 
       {
-        id: 3,
+        id: 4,
         name: "NPTEL IIT BOMBAY'S Demystifying Networks",
         organization: "IIT Bombay – NPTEL",
         skills: ["Computer Networks", "TCP/IP", "OSI Model", "Protocols"],
@@ -40,7 +49,16 @@ const CertificatesSection = () => {
         link: "https://drive.google.com/file/d/1F7diJ5C3ZZikHrESOZBnpF85YIpgok9H/view?usp=sharing"
       },
       {
-        id: 4,
+        id: 5,
+        name: "Marketing Lead - GFG Student Chapter",
+        organization: "GeeksforGeeks",
+        skills: ["Community Engagement", "Leadership", "Event Planning", "Technical Communication"],
+        description: "Led GeeksforGeeks Student Chapter for 1 year, engaging 500+ peers through DSA workshops, contests, and events to promote computer science learning on campus.",
+        type: "Leadership",
+        link: "https://media.geeksforgeeks.org/certificates/1751870732/4c4ad17903d308079effa89305fc02de.pdf"
+      },
+      {
+        id: 6,
         name: "MPYSC'39 Innovation Challenge",
         organization: "MP Government",
         skills: ["IoT", "App Development", "Automation", "Innovation", "Problem Solving"],
@@ -49,41 +67,26 @@ const CertificatesSection = () => {
         link: "https://drive.google.com/file/d/1t3w0EzwXKQDKoEJnu-TZ7v27LsyCJ0Fc/view?usp=sharing"
       },
       {
-        id: 5,
-        name: "GeeksforGeeks 160 Days Challenge Winner",
-        organization: "GeeksforGeeks",
-        skills: ["Data Structures", "Algorithms", "Problem Solving", "C++"],
-        description: "Badge awarded for solving problems in GFG’s 160 Days DSA Challenge.",
-        type: "Badge",
-        link: "https://drive.google.com/file/d/1ufMLxl4CRtXUOZSrDIvTQxlIyDqjyS8G/view?usp=sharing"
-      },
-      {
-        id: 6,
+        id: 7,
         name: "HackerRank Problem Solving (Basic)",
         organization: "HackerRank",
-        skills: ["Basic Algorithms", "Logic Building", "Coding"],
+        skills: ["Basic Algorithms", "Logic Building", "Coding", "Data Structures", "Algorithms"],
         description: "Certified for demonstrating foundational problem-solving skills in coding challenges.",
         type: "Certification",
         link: "https://drive.google.com/file/d/1-l2muepR0mBitFcIIuzSOq1By1aAMrNu/view?usp=sharing"
       },
       {
-        id: 7,
+        id: 8,
         name: "HackerRank Problem Solving (Intermediate)",
         organization: "HackerRank",
-        skills: ["Problem Solving", "Data Structures"],
+        skills: ["Problem Solving", "Data Structures", "Algorithms","C++"],
         description: "Certified for demonstrating intermediate-level problem-solving proficiency.",
         type: "Certification",
         link: "https://drive.google.com/file/d/1q2TeQYEB_FnCQD6mJhWhIh2gbYJOXSel/view?usp=sharing"
-      },
-      {
-        id: 8,
-        name: "LeetCode 365 Days Badge",
-        organization: "LeetCode",
-        skills: ["Algorithms", "Data Structures", "Problem Solving", "C++", "Consistency"],
-        description: "Solved problems on LeetCode for 365 days showcasing problem-solving skills and consistency.",
-        type: "Badge",
-        link: "https://drive.google.com/file/d/1tHo6uC0_Ap5bPJDrhh8rRcuksnO4dMBj/view?usp=sharing"
       }
+      ,
+
+
     ];
 
     setCertificates(mockCertificates);
@@ -156,13 +159,13 @@ const CertificatesSection = () => {
                 >
 
                   <div>
-                    <h3 className="text-lg font-bold text-blue-100 mb-1">{certificate.name}</h3>
+                    <h3 className="text-md font-semibold text-blue-100 mb-1">{certificate.name}</h3>
                     <p className="text-blue-200 text-md mb-4">{certificate.organization}</p>
 
                   </div>
 
                   <div>
-                    <p className="text-gray-200 text-s mb-2 -mt-2">Skills:</p>
+                    <p className="text-gray-200 text-md mb-2 -mt-2">Skills:</p>
                     <div className="flex flex-wrap gap-2">
                       {certificate.skills.map((skill) => (
                         <span
@@ -187,8 +190,8 @@ const CertificatesSection = () => {
                 >
 
                   <div>
-                    <h3 className="text-lg font-bold text-blue-100 mb-3">{certificate.name}</h3>
-                    <p className="text-blue-100 text-m">{certificate.description}</p>
+                    <h3 className="text-md font-semibold text-blue-100 mb-3">{certificate.name}</h3>
+                    <p className="text-blue-100 text-sm">{certificate.description}</p>
 
                   </div>
 

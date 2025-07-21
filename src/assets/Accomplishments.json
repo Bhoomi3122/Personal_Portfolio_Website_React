@@ -3,32 +3,63 @@
     {
       "index": 0,
       "title": "Topper of My Branch",
-      "shortDescription": "I secured the highest academic rank in my branch with a CGPA of 8.95, maintaining excellent grades throughout my academic journey.",
-      "skillsUsed": ["Strong academic performance", "problem-solving", "consistency"]
+      "shortDescription": "I secured the highest academic rank in my branch with a CGPA of 8.96, maintaining excellent grades throughout my academic journey.",
+      "skillsUsed": [
+        "Strong academic performance",
+        "problem-solving",
+        "consistency"
+      ]
     },
     {
       "index": 1,
-      "title": "Top 1% in NPTEL IIT Bombay Demystifying Networks Exam",
-      "shortDescription": "Ranked among the top 1% in a national-level networking exam conducted by IIT Bombay, demonstrating strong technical and analytical skills.",
-      "skillsUsed": ["Computer networks", "problem-solving", "technical knowledge"]
+      "title": "Top 5% in NPTEL IIT Gandhinagar - Getting Started with Competitive Programming",
+      "shortDescription": "Ranked among the top 5% in a national-level competitive programming course conducted by IIT Gandhinagar, showcasing strong analytical thinking and coding skills.",
+      "skillsUsed": [
+        "Competitive Programming",
+        "Problem-Solving",
+        "Algorithmic Thinking"
+      ]
     },
     {
       "index": 2,
-      "title": "CS50 Web Development Course Completion",
-      "shortDescription": "Completed CS50 Web Development using Python and JavaScript and gained strong knowledge of HTML, CSS, JavaScript, Git, CI/CD principles, security, and Django.",
-      "skillsUsed": ["Web development", "full-stack programming", "problem-solving"]
+      "title": "Top 1% in NPTEL IIT Bombay Demystifying Networks Exam",
+      "shortDescription": "Ranked among the top 1% in a national-level networking exam conducted by IIT Bombay, demonstrating strong technical and analytical skills.",
+      "skillsUsed": [
+        "Computer networks",
+        "Problem-solving",
+        "Technical knowledge"
+      ]
     },
     {
       "index": 3,
-      "title": "GeeksforGeeks Coding Challenge Winner",
-      "shortDescription": "Declared a winner of the GFG 160 Days Challenge for consistently solving problems, improving competitive programming and problem-solving skills.",
-      "skillsUsed": ["Competitive programming", "consistency", "data structures and algorithms"]
+      "title": "Infosys Springboard Cohort 4 - Pragati Path to Future",
+      "shortDescription": "Selected for Infosys Springboard Cohort 4 - Pragati Path to Future, a program focused on technical skill-building, career growth, and professional development.",
+      "skillsUsed": [
+        "Soft skills",
+        "career development",
+        "technology fundamentals"
+      ]
     },
     {
       "index": 4,
-      "title": "3rd Winner - 39th MPYSC Innovation Challenge",
-      "shortDescription": "Won 3rd place for developing a Smart Home Automation project at the MP Young Scientist Congress, showcasing innovation and technical expertise.",
-      "skillsUsed": ["IoT", "embedded systems", "innovation", "teamwork"]
+      "title": "Contributor - GirlScript Summer of Code (GSSoC'25)",
+      "shortDescription": "Contributing to open-source projects as part of GSSoC'25, applying advanced DSA concepts while collaborating with teams on real-world development tasks.",
+      "skillsUsed": [
+        "Open Source",
+        "Teamwork",
+        "Git",
+        "GitHub"
+      ]
+    },
+    {
+      "index": 5,
+      "title": "GeeksforGeeks Coding Challenge Winner",
+      "shortDescription": "Declared a winner of the GFG 160 Days Challenge for consistently solving problems, improving competitive programming and problem-solving skills.",
+      "skillsUsed": [
+        "Competitive programming",
+        "consistency",
+        "data structures and algorithms"
+      ]
     }
   ],
   "leadershipActivities": [
@@ -36,25 +67,43 @@
       "index": 0,
       "title": "Competitive Programming Student Coordinator",
       "shortDescription": "Selected as the Competitive Programming Coordinator to guide students in problem-solving, organize coding sessions, and promote a coding culture.",
-      "skillsUsed": ["Leadership", "mentoring", "data structures and algorithms"]
+      "skillsUsed": [
+        "Leadership",
+        "mentoring",
+        "data structures and algorithms"
+      ]
     },
     {
       "index": 1,
-      "title": "Infosys Springboard Cohort 4 - Pragati Path to Future",
-      "shortDescription": "Selected for Infosys Springboard Cohort 4 - Pragati Path to Future, a program focused on technical skill-building, career growth, and professional development.",
-      "skillsUsed": ["Soft skills", "career development", "technology fundamentals"]
+      "title": "Campus Ambassador - GirlScript Summer of Code (GSSoC'25)",
+      "shortDescription": "Represented the GSSoC'25 program on campus, contributing to the promotion of open-source development and encouraging student participation in coding events.",
+      "skillsUsed": [
+        "Leadership",
+        "Teamwork",
+        "Open Source"
+      ]
     },
     {
       "index": 2,
       "title": "Lead - GeeksforGeeks Student Chapter (MITS)",
       "shortDescription": "Leading the GeeksforGeeks Student Chapter at MITS, collaborating with peers to organize coding challenges and mentor students in problem-solving.",
-      "skillsUsed": ["Leadership", "event management", "teaching", "problem-solving"]
+      "skillsUsed": [
+        "Leadership",
+        "event management",
+        "teaching",
+        "problem-solving"
+      ]
     },
     {
       "index": 3,
       "title": "Student Coordinator - Innovation & DIY Club",
       "shortDescription": "Guiding students in hands-on IoT projects at the Innovation & DIY Club, fostering technical skills and encouraging innovative thinking.",
-      "skillsUsed": ["IoT", "embedded systems", "project management", "technical problem-solving"]
+      "skillsUsed": [
+        "IoT",
+        "embedded systems",
+        "project management",
+        "technical problem-solving"
+      ]
     }
   ]
 }

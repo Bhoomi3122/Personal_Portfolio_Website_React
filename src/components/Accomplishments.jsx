@@ -155,7 +155,7 @@ function AccomplishmentCard({ item, index }) {
       className="h-full"
     >
       <motion.div
-        className={`rounded-xl shadow-md overflow-hidden h-50 cursor-pointer relative border transition-all duration-300 ${borderColor}`}
+        className={`rounded-xl shadow-md overflow-hidden h-full cursor-pointer relative border transition-all duration-300 ${borderColor}`}
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
         onClick={() => setIsExpanded(!isExpanded)}

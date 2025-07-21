@@ -198,25 +198,6 @@ export default function AboutMeSection() {
     }
   ];
 
-  // Personality traits with icons
-  const traits = [
-    { 
-      icon: <Brain size={18} />, 
-      text: "Once I start something, I have to finish it — quitting is not in my vocabulary.",
-      color: "text-sky-400" 
-    },
-    { 
-      icon: <FileCode size={18} />, 
-      text: "Hardworking? More like can’t-stop-won’t-stop till it’s perfect.",
-      color: "text-cyan-400" 
-    },
-    { 
-      icon: <Users size={18} />, 
-      text: "Natural leader alert  — I love being the one who gets the team hyped and moving!",
-      color: "text-sky-300" 
-    }
-  ];
-
   // Animation states for fun facts
   const [hoveredFactIndex, setHoveredFactIndex] = useState(null);
 
@@ -275,9 +256,9 @@ export default function AboutMeSection() {
           className="p-2 bg-gradient-to-br from-sky-400 to-cyan-400 rounded-lg shadow-md"
           whileHover={{ rotate: [0, -10, 10, -10, 0], transition: { duration: 0.5 } }}
         >
-          <Code size={24} className="text-slate-900" />
+          <Code size={20} className="text-slate-900" />
         </motion.div>
-        <h2 className="text-3xl font-bold text-slate-100">About Me</h2>
+        <h2 className="text-2xl font-bold text-slate-100">About Me</h2>
       </motion.div>
 
       {/* Introduction paragraph */}
@@ -285,7 +266,7 @@ export default function AboutMeSection() {
         className="mb-8" 
         variants={itemVariants}
       >
-        <p className="text-lg text-slate-300 leading-relaxed">
+        <p className="text-md text-slate-300 leading-relaxed">
         I am a final year Computer Science and Design student at MITS-DU Gwalior, passionate about web development, data structures, and solving real-world problems while continuously growing my skills in the tech world.
         </p>
       </motion.div>
@@ -330,7 +311,7 @@ export default function AboutMeSection() {
         <div>
           {/* Coding platforms section */}
           <motion.div variants={itemVariants} className="mb-8">
-            <h3 className="text-xl font-semibold text-slate-100 mb-4 border-b border-slate-700 pb-2">
+            <h3 className="text-lg font-semibold text-slate-100 mb-4 border-b border-slate-700 pb-2">
               Find me on
             </h3>
             
@@ -378,7 +359,7 @@ export default function AboutMeSection() {
               >
                 <Target size={22} />
               </motion.div>
-              <h3 className="text-xl font-semibold text-slate-100">Current Goals</h3>
+              <h3 className="text-lg font-semibold text-slate-100">Current Goals</h3>
             </div>
             
             <p className="text-slate-300 relative z-10">
@@ -423,7 +404,7 @@ export default function AboutMeSection() {
               >
                 <Sparkles className="text-sky-400" size={20} />
               </motion.div>
-              <h3 className="text-xl font-semibold text-slate-100 border-b border-slate-700 pb-2 flex-grow">
+              <h3 className="text-lg font-semibold text-slate-100 border-b border-slate-700 pb-2 flex-grow">
                 Fun Facts
               </h3>
             </div>
@@ -464,7 +445,7 @@ export default function AboutMeSection() {
                   >
                     {fact.icon}
                   </motion.div>
-                  <span className="text-slate-300 font-medium">{fact.text}</span>
+                  <span className="text-slate-300 text-md">{fact.text}</span>
 
                   {/* Background decorative elements for fun facts */}
                   <motion.div 
@@ -485,8 +466,6 @@ export default function AboutMeSection() {
               ))}
             </div>
           </motion.div>
-          {/* Goals section - ENHANCED */}
-         
         </div>
       </div>
       
